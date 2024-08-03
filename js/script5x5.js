@@ -5,7 +5,7 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
 	count = document.querySelector('.counter'),
 	timer = document.querySelector('.timer'),
 	start_game = document.querySelector('.start-game'),
-	game_board_wrapper = document.querySelector('.game-board-wrapper'),
+	gameBoardWrapper = document.querySelector('.game-board-wrapper'),
 	screen_container = document.querySelector('.screen__container'),
 	wrapper_hidden = document.querySelector('.wrapper__hidden'),
 	go_back = document.querySelector('.go_back'),
@@ -319,4 +319,4 @@ function addDataTolocalStorage() {
 }
 addDataTolocalStorage();
 
-game_board_wrapper.addEventListener('click', moveDice);
+gameBoardWrapper.addEventListener('click', moveDice);
