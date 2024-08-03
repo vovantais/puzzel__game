@@ -1,106 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ! Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3d8e44fa38.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ! Icon -->
+    <link rel="shortcut icon" href="img/puzzle.ico" />
+    <link rel="stylesheet" href="./css/style-min.css" />
+    <title>Puzzle game</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- ! Font Awesome -->
-	<script src="https://kit.fontawesome.com/3d8e44fa38.js" crossorigin="anonymous"></script>
-	<!-- ! Icon -->
-	<link rel="shortcut icon" href="img/puzzle.ico">
-	<link rel="stylesheet" href="./css/style-min.css">
-	<title>Puzzle game</title>
-</head>
-
-<body id='fieldSelection'>
-	<div class="wrapper">
-		<div class="wrapper__hidden">
-			<a href="#" class="start-game">start</a>
-			<header class="header">
-				<div class="info"><span class="description">Time </span><span class="timer">00:00</span></div>
-				<div class="moves"><span class="description">Steps </span><span class="counter">0</span></div>
-				<button class="pause">Pause game</button>
-			</header>
-			<div class="game-board-wrapper">
-				<div class="game-board">
-					<div class="dice "></div>
-					<div class="dice "></div>
-					<div class="dice "></div>
-					<div class="dice "></div>
-					<div class="dice "></div>
-					<div class="dice "></div>
-					<div class="dice "></div>
-					<div class="dice "></div>
-					<div class="dice "></div>
-					<div class="dice"></div>
-					<div class="dice"></div>
-					<div class="dice"></div>
-					<div class="dice"></div>
-					<div class="dice"></div>
-					<div class="dice"></div>
-					<div class="dice"></div>
-					<div class="dice big"></div>
-					<div class="dice big"></div>
-					<div class="dice big"></div>
-					<div class="dice big"></div>
-					<div class="dice big"></div>
-					<div class="dice big"></div>
-					<div class="dice big"></div>
-					<div class="dice big"></div>
-					<div class="dice big"></div>
-					<div class="screen__container">
-						<div class="congratulations">
-							<h2 class="congratulations__title">Congratulations!</h2>
-							<div class="congratulations__text"><span>Outstanding!</span><br>
-								<p class="congratulations__step"></p>
-								<p class="congratulations__time"></p>
-								<button class="nav__btn go_back">go
-									back</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="settings">
-				<div class="settings__icon"><i class="fas fa-cog"></i></div>
-				<div class="settings__body">
-					<div class="settings__row">
-						<div class="settings__item-rules">
-							<div class="item__title-rules">Rules</div>
-							<p class="item__text">
-								The object of the puzzle is to place the tiles in order by making sliding
-								moves that use the empty space.The best
-								results will in posted in category best results
-							</p>
-						</div>
-						<div class="settings__item-results">
-							<div class="item__title-results">Best results</div>
-							<div class="results">
-								<div class="results__name ">name</div>
-								<div class="results__date ">date</div>
-								<div class="results__time ">time</div>
-								<div class="results__moves ">moves</div>
-								<div class="results__size ">size</div>
-							</div>
-						</div>
-						<div class="settings__item-settings">
-							<div class="item__title-settings">Settings</div>
-							<p class="item__volume-settings">
-								<i class="fas fa-volume-up"></i>
-							</p>
-							<select class="selection">
-								<option selected value="4x4">4x4</option>
-								<option value="3x3">3x3</option>
-								<option value="5x5">5x5</option>
-							</select>
-							<a href="#" class="choose-field">Choose</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src='./js/scriptSwitcher-min.js'></script>
-</body>
-
+  <body id="fieldSelection">
+    <div class="wrapper">
+      <div class="wrapper__hidden">
+        <a href="#" class="start-game">start</a>
+        <header class="header">
+          <div class="info">
+            <span class="description">Time </span
+            ><span class="timer">00:00</span>
+          </div>
+          <div class="moves">
+            <span class="description">Steps </span
+            ><span class="counter">0</span>
+          </div>
+          <button class="pause">Pause game</button>
+        </header>
+        <div class="game-board-wrapper">
+          <div class="game-board">
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice"></div>
+            <div class="dice big"></div>
+            <div class="dice big"></div>
+            <div class="dice big"></div>
+            <div class="dice big"></div>
+            <div class="dice big"></div>
+            <div class="dice big"></div>
+            <div class="dice big"></div>
+            <div class="dice big"></div>
+            <div class="dice big"></div>
+            <div class="screen__container">
+              <div class="congratulations">
+                <h2 class="congratulations__title">Congratulations!</h2>
+                <div class="congratulations__text">
+                  <span>Outstanding!</span><br />
+                  <p class="congratulations__step"></p>
+                  <p class="congratulations__time"></p>
+                  <button class="nav__btn go_back">go back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="settings">
+          <div class="settings__icon"><i class="fas fa-cog"></i></div>
+          <div class="settings__body">
+            <div class="settings__row">
+              <div class="settings__item-rules">
+                <div class="item__title-rules">Rules</div>
+                <p class="item__text">
+                  The object of the puzzle is to place the tiles in order by
+                  making sliding moves that use the empty space.The best results
+                  will in posted in category best results
+                </p>
+              </div>
+              <div class="settings__item-results">
+                <div class="item__title-results">Best results</div>
+                <div class="results">
+                  <div class="results__name">name</div>
+                  <div class="results__date">date</div>
+                  <div class="results__time">time</div>
+                  <div class="results__moves">moves</div>
+                  <div class="results__size">size</div>
+                </div>
+              </div>
+              <div class="settings__item-settings">
+                <div class="item__title-settings">Settings</div>
+                <p class="item__volume-settings">
+                  <i class="fas fa-volume-up"></i>
+                </p>
+                <select class="selection">
+                  <option selected value="4x4">4x4</option>
+                  <option value="3x3">3x3</option>
+                  <option value="5x5">5x5</option>
+                </select>
+                <a href="#" class="choose-field">Choose</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/scriptSwitcher-min.js"></script>
+  </body>
 </html>
